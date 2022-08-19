@@ -8,6 +8,7 @@ if __name__ == '__main__':
         # tipo primitivo
         print('O tipo pritivo é: {}'.format(type(v1)))
         print('É espaço ? {}'.format(v1.isspace()))
+        print('É ASCII ? {}'.format(v1.isascii()))
 
         print('É numérico ? {}'.format(v1.isnumeric()))
         print('É decimal ? {}'.format(v1.isdecimal()))
@@ -20,7 +21,7 @@ if __name__ == '__main__':
         print('Está em maiúsculo ? {}'.format(v1.isupper()))
         print('Está em minúsculo ? {}'.format(v1.islower()))
         print('Está capitalizado ? {}'.format(v1.istitle()))
-        print('É ASCII ? {}'.format(v1.isascii()))
+
 
         continua = bool(input('Deseja continuar ? (True/False) '))
 
