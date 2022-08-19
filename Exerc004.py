@@ -5,21 +5,22 @@ if __name__ == '__main__':
     while continua == True:
 
         v1 = input('Digite algo:')
-
-        #tipo primitivo
+        # tipo primitivo
         print('O tipo pritivo é: {}'.format(type(v1)))
+        print('É espaço ? {}'.format(v1.isspace()))
 
-        if v1.isspace() == True:
-            print('É espaço ? {}'.format(v1.isspace()))
-        else if v1.isnumeric() == True:
-            print('É numérico ? {}'.format(v1.isnumeric()))
+        print('É numérico ? {}'.format(v1.isnumeric()))
+        print('É decimal ? {}'.format(v1.isdecimal()))
+        print('É digito ? {}'.format(v1.isdigit()))
+        print('É printable ? {}'.format(v1.isprintable()))
+        print('É identifier ? {}'.format(v1.isidentifier()))
 
-        else:
-            print('É alfabético ? {}'.format(v1.isalpha()))
-            print('É alfanumérico ? {}'.format(v1.isalnum()))
-            print('É maiúsculo ? {}'.format(v1.isupper()))
-            print('É minúsculo ? {}'.format(v1.islower()))
+        print('É alfabético ? {}'.format(v1.isalpha()))
+        print('É alfanumérico ? {}'.format(v1.isalnum()))
+        print('Está em maiúsculo ? {}'.format(v1.isupper()))
+        print('Está em minúsculo ? {}'.format(v1.islower()))
+        print('Está capitalizado ? {}'.format(v1.istitle()))
+        print('É ASCII ? {}'.format(v1.isascii()))
 
-    continua = bool(input('Deseja continuar ? (True/False) '))
-
+        continua = bool(input('Deseja continuar ? (True/False) '))
 
